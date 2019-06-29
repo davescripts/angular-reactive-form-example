@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { TestFormComponent } from './test-form/test-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TestFormComponent
   ],
   imports: [
     BrowserModule,
