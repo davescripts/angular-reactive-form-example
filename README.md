@@ -1,27 +1,37 @@
-# AngularReactiveFormExample
+# Angular Reactive Form Example
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+Angular example of a Reactive Form.
 
-## Development server
+More details can be found [here](https://davescripts.com/angular-reactive-form-example).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Requirements
 
-## Code scaffolding
+Node.js and NPM.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+Git clone this repository.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```sh
+git clone https://github.com/davescripts/angular-reactive-form-example.git
+```
 
-## Running unit tests
+Run the **npm install** command on the root folder of the project.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+cd angular-reactive-form-example
+npm install
+```
 
-## Running end-to-end tests
+## Run
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```sh
+ng serve --open
+```
 
-## Further help
+## Live Demo
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Live demo at [StackBlitz](https://stackblitz.com/edit/davescripts-angular-reactive-form-example).
+
+## License
+This project is licensed under the MIT license.
