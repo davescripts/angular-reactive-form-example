@@ -1,1 +1,43 @@
-<p>test-form works!</p>
+<h2>Angular Form Example</h2>
+<div><em>Reactive Form</em></div><br/>
+
+<form [formGroup]="testForm">
+
+  <p>
+    <span>Name</span><br/>
+    <input type="text" formControlName="name" size="20" /><br/>
+  </p>
+
+  <p>
+    <span>Comments</span><br/>
+    <textarea formControlName="comments"
+      cols="40" rows="4"></textarea><br/>
+  </p>
+
+  <p>
+    <span>Favorite Color</span><br/>
+    <select formControlName="color">
+      <option *ngFor="let c of colors" value="{{c}}">{{c}}</option>
+    </select>
+  </p>
+
+  <p>
+    <span>Favorite Season</span><br/>
+    <span *ngFor="let s of seasons">
+      <input type="radio"
+        value="{{s}}" formControlName="season" /> {{s}}
+    </span>
+  </p>
+
+  <p formArrayName="hobbies">
+    <span>Hobbies</span><br/>
+    <span *ngFor="let h of hobbies; index as i">
+      <input type="checkbox" 
+        value="{{h}}" formControlName="{{i}}" /> {{h}}
+    </span>
+  </p>
+
+  <button type="submit">Submit</button>
+
+</form>
+
