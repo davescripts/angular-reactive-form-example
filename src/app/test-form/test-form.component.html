@@ -1,7 +1,7 @@
 <h2>Angular Form Example</h2>
 <div><em>Reactive Form</em></div><br/>
 
-<form [formGroup]="testForm">
+<form [formGroup]="testForm" (ngSubmit)="onSubmit()">
 
   <p>
     <span>Name</span><br/>
